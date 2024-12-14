@@ -44,25 +44,20 @@ header a {
 p {
   text-align: center;
 }
+.unit {
+  opacity: 0;
+}
 
-.unit:not(:nth-of-type(1)) {
-  left: 0%;
-}
-@keyframes LtoR {
-  0% {
-    left: 0%;
-    opacity: 0;
-  }
-  50% {
-    left: 50%;
-    opacity: 1;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
 .unit img {
   width: 825px;
   height: 549px;
+}
+#ImgPlayer button {
+  z-index: 11;
+  position: absolute;
+  left: 25%;
+  height: 100%;
+}
+#ImgPlayer button:nth-of-type(2) {
+  left: 75%;
 }

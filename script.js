@@ -2,10 +2,19 @@ const fristButton = document.querySelector("#ImgPlayer button:nth-of-type(1)");
 const secondButton = document.querySelector("#ImgPlayer button:nth-of-type(2)");
 fristButton.addEventListener("click", () => ImgPlayerClick(-1));
 secondButton.addEventListener("click", () => ImgPlayerClick(1));
+const dots = document.querySelectorAll("#dotBox button")
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", () => dotClick(i))
 
+}
 console.log("hi");
 var index = 1;
 updImg(index);
+function dotClick(i) {
+  console.log(i)
+  index = i + 1
+  updImg(index)
+}
 function ImgPlayerClick(R) {
   index = udtIndex(R);
   updImg(index);
@@ -32,13 +41,25 @@ function updImg(index) {
   var unitafter = document.querySelector(
     "#ImgPlayer .unit:nth-of-type(" + udtIndex(1).toString() + ")"
   );
+  console.log(udtIndex(-1), index, udtIndex(1))
   console.log(unitbefore);
   console.log(unit);
   console.log(unitafter);
-  unit.style.transform = "translateX(0%)";
+  unit.style.transform = "translateX(-50%)";
   unit.style.opacity = "1";
-  unitbefore.style.transform = "translateX(-125%)";
+  unitbefore.style.transform = "translateX(-150%)";
   unitbefore.style.opacity = "0.2";
-  unitafter.style.transform = "translateX(125%)";
+  unitafter.style.transform = "translateX(50%)";
   unitafter.style.opacity = "0.2";
+  for (let j = 0; j < dots.length; j++) {
+    dots[j].style.backgroundColor = "black"
+  }
+  dots[index - 1].style.backgroundColor = "white"
+}
+// autoplay()
+function autoplay() {
+  // console.log("下一張")
+  setTimeout(autoplay, 5000)
+  index = udtIndex(1)
+  updImg(index)
 }

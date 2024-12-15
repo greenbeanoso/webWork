@@ -45,21 +45,22 @@ function updImg(index) {
   console.log(unitbefore);
   console.log(unit);
   console.log(unitafter);
-  unit.style.transform = "translateX(-50%)";
+  unit.style.transform = "translateX(-50%) scale(1)";
   unit.style.opacity = "1";
-  unitbefore.style.transform = "translateX(-150%)";
+  unitbefore.style.transform = "translateX(-150%) scale(0.7)";
   unitbefore.style.opacity = "0.2";
-  unitafter.style.transform = "translateX(50%)";
+  unitafter.style.transform = "translateX(50%) scale(0.7)";
   unitafter.style.opacity = "0.2";
   for (let j = 0; j < dots.length; j++) {
     dots[j].style.backgroundColor = "black"
   }
   dots[index - 1].style.backgroundColor = "white"
 }
-// autoplay()
+
 function autoplay() {
-  // console.log("下一張")
+  console.log("下一張")
   setTimeout(autoplay, 5000)
   index = udtIndex(1)
   updImg(index)
 }
+autoplay()

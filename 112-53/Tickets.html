@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>Business</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,38 +16,21 @@
         <a href="Bussiness.html">Business</a>
         <a href="tickets.html">Tickets</a>
     </header>
-    <div style="display: flex;">
-        <div id="map">
-            <button><span>新聞標題1</span></button>
-            <button><span>新聞標題2</span></button>
-            <button><span>新聞標題3</span></button>
-        </div>
-        <div id="NewsCntBox">
-            <img src="assets\下載.jpg" alt="背景">
-            <img src="assets\下載 (1).png" alt="背景">
-            <img src="assets\下載.png" alt="背景">
-            <div class="NewsCnt">
-                <p>1111Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus distinctio dolorum
-                    impedit
-                    necessitatibus, odit ex et magni consectetur exercitationem, molestiae placeat, accusamus vel ipsa
-                    laborum neque deleniti omnis esse at! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Cumque quae error unde asperiores expedita, fugiat saepe possimus iste ducimus nulla earum porro
-                    ipsum nesciunt libero maxime vel nostrum provident. Nihil.</p>
-                <p>2222Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus distinctio dolorum
-                    impedit
-                    necessitatibus, odit ex et magni consectetur exercitationem, molestiae placeat, accusamus vel ipsa
-                    laborum neque deleniti omnis esse at! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Cumque quae error unde asperiores expedita, fugiat saepe possimus iste ducimus nulla earum porro
-                    ipsum nesciunt libero maxime vel nostrum provident. Nihil.</p>
-                <p>3333Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus distinctio dolorum
-                    impedit
-                    necessitatibus, odit ex et magni consectetur exercitationem, molestiae placeat, accusamus vel ipsa
-                    laborum neque deleniti omnis esse at! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Cumque quae error unde asperiores expedita, fugiat saepe possimus iste ducimus nulla earum porro
-                    ipsum nesciunt libero maxime vel nostrum provident. Nihil.</p>
-            </div>
-        </div>
-
+    <div id="ticketsBox">
+        <span>Frist name</span>
+        <input type="text" id="fristName">
+        <br>
+        <span>Last name</span>
+        <input type="text" id="lastName">
+        <br>
+        <span>Phone</span>
+        <input type="tel" id="phone">
+        <br>
+        <span>Verification</span><button id="Newcode">0000</button><br>
+        <input type="text" maxlength=4 id ="VerifyCode">
+        </br>
+        <input id="reset" type="button" value="Reset">
+        <input id="submit" type="button" value="Submit">
     </div>
     <div id="contentBox">
         <div style="border-color: orange;">
@@ -84,7 +67,7 @@
     <div>
         <h3>Copyright © 2023 NYICFF All Rights Reserved</h3>
     </div>
-    <script src="newsPage_script.js"></script>
+    <script src="Tickets.js"></script>
 </body>
 
 </html>

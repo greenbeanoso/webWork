@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -27,9 +28,14 @@
         <span>Phone</span>
         <input type="tel" id="phone">
         <br>
-        <span>Verification</span><button id="Newcode">0000</button><br>
+        <span>Verification</span><button id="Newcode">ReGenCode</button><br>
         <span>less to more</span>
-        <input type="text" maxlength=4 id="VerifyCode">
+        <div id="drag">
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
         </br>
         <input id="reset" type="button" value="Reset">
         <input id="submit" type="button" value="Submit">

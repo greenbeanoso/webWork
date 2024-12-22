@@ -258,3 +258,22 @@ p {
 #BusCntBox div:has(details[open]) p {
   max-height: 1000px;
 }
+
+#drag {
+  display: flex;
+  height: 120px;
+  width: 500px;
+  background-color: gray;
+}
+
+#drag div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+  background-color: black;
+}

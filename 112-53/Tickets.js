@@ -1,3 +1,4 @@
+
 const fristname = document.querySelector("#fristName")
 const lastname = document.querySelector("#lastName")
 const phone = document.querySelector("#phone")

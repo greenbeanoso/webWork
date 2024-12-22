@@ -258,7 +258,3 @@ p {
 #BusCntBox div:has(details[open]) p {
   max-height: 1000px;
 }
-
-#VerifyCode {
-  padding: 10px;
-}

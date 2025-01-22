@@ -58,7 +58,7 @@ function updImg(index) {
 }
 
 function autoplay() {
-  console.log("下一張")
+  // console.log("下一張")
   setTimeout(autoplay, 5000)
   index = udtIndex(1)
   updImg(index)

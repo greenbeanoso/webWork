@@ -18,18 +18,19 @@
         <a href="Bussiness.html">Business</a>
         <a href="tickets.html">Tickets</a>
     </header>
-    <div id="ticketsBox" >
+
+    <form id="ticketsBox" method="post" action="index.php">
         <span>Frist name</span>
-        <input type="text" id="fristName">
+        <input type="text" name="first_name">
         <br>
         <span>Last name</span>
-        <input type="text" id="lastName">
+        <input type="text" name="last_name">
         <br>
         <span>Phone</span>
-        <input type="tel" id="phone">
+        <input type="tel" name="phone">
         <br>
         <span>password</span>
-        <input type="password" id="password">
+        <input type="password" name="password">
         <br>
         <span>Verification</span><button id="Newcode">ReGenCode</button><br>
         <span>less to more</span>
@@ -40,9 +41,9 @@
             <div>3</div>
         </div>
         </br>
-        <input id="reset" type="button" value="Reset">
-        <input id="submit" type="button" value="Submit">
-    </div>
+        <input type="reset" value="Reset">
+        <input  type="submit" value="Submit">
+    </form>
     <div id="contentBox">
         <div style="border-color: orange;">
             <img

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nobr::before {
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+    <form action="test.php" method="post">
+        <input name="first_name">
+        <input name="last_name">
+        <input name="phone">
+        <input name="password">
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br>
+    <h1>2</h1>
+    <div>
+        <input type="text" id="fristName">
+        <input type="text" id="lastName">
+        <input type="text" id="phone">
+        <input type="text" id="password">
+        <input type="button" value="submit" id="sub">
+    </div>
+    <h1>2</h1>
+    <div>
+        <input type="text" id="editID">
+        <input type="text" id="editFristName">
+        <input type="text" id="editLastName">
+        <input type="text" id="editPhone">
+        <input type="text" id="editPassword">
+        
+        <input type="button" value="上傳修改" id="subEdit">
+    </div>
+    <table border="3">
+        <tbody id="list">
+
+        </tbody>
+    </table>
+    <script src="test.js"></script>
+</body>
+
+</html>

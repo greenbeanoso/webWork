@@ -33,9 +33,7 @@ header a {
   display: flex;
   justify-content: center;
   align-content: center;
-
 }
-
 
 .unit {
   background-color: rgb(127, 127, 127);
@@ -49,7 +47,6 @@ header a {
 }
 
 .unit div {
-
   z-index: 10;
   color: rgb(255, 0, 0);
   position: absolute;
@@ -61,13 +58,10 @@ p {
   text-align: center;
 }
 
-
 .unit img {
   width: 825px;
   height: 549px;
 }
-
-
 
 #ImgPlayer button {
   z-index: 11;
@@ -195,7 +189,6 @@ p {
   width: 100%;
   transition: all 0.2s;
   overflow: hidden;
-
 }
 
 .NewsCnt:hover {
@@ -217,7 +210,6 @@ p {
   height: 500px;
   width: 100%;
   background-color: black;
-
 }
 
 #BusCntBox div {
@@ -268,8 +260,8 @@ p {
 
 #drag div {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
+  align-content: center;
   font-size: 50px;
   width: 100px;
   height: 100px;

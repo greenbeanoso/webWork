@@ -17,6 +17,7 @@ header div {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
+  box-shadow: 2px 2px 10px 1px darkblue;
 }
 
 header img {
@@ -54,16 +55,16 @@ header a:hover {
 }
 
 footer {
-  position: absolute;
-  /* background-color: aqua; */
+  position: fixed;
+  bottom: 10px;
   height: 50px;
   width: 100%;
-  top: calc(100% - 65px);
   display: grid;
   justify-content: center;
 }
 
 footer p {
+  margin: 0px;
   color: white;
   text-decoration-line: none;
   font: bold 15px sans-serif;
@@ -166,16 +167,18 @@ footer p {
   border-radius: 10%;
   color: white;
 }
+
 .Discover {
   font-size: 20px;
-  overflow: hidden;
-}
-.Discover:has(details) {
-  max-height: 100px;
-  height: 300px;
+  margin-bottom: 100px;
 }
 
-.Discover:has(details[open]) {
+.Discover:has(details) p {
+  max-height: 100px;
+  height: auto;
+}
+
+.Discover:has(details[open]) p {
   max-height: 1000000000px;
 }
 
@@ -186,8 +189,9 @@ footer p {
 .Discover details[open] summary span::after {
   content: "閱讀更少(read less)";
 }
+
 .Discover details summary {
-  position: absolute;
+  position: relative;
   background-color: white;
   color: black;
   font-size: 30px;
@@ -196,25 +200,88 @@ footer p {
   border: 3px solid black;
   border-radius: 10%;
   display: block;
-  top: 70%;
-
   left: calc(50% - 135.5px);
 }
+
 #pageDiscover {
   justify-items: center;
   color: white;
 }
+
 .Discover p {
   margin: 0px;
   text-align: center;
+  overflow: hidden;
 }
+
 #list {
-  position: absolute;
-  width: 500px;
-  left: calc(50% - 250px);
+  padding: 10px;
+  top: 60px;
+  position: relative;
+  width: 360px;
+  left: calc(50% - 180px);
   border: 3px solid white;
   color: white;
-  /* display: flex;
-  align-content: center;
-  justify-items: center; */
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#list p {
+  margin: 15px;
+  display: flex;
+  justify-content: end;
+}
+
+#list div {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#list p input {
+  color: white;
+  margin-left: 5px;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#drag,
+#drag-target {
+  margin: 3px;
+}
+
+#drag div span,
+#drag-target div span {
+  background-color: darkgrey;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drag div,
+#drag-target div {
+  background-color: lightgrey;
+  height: 30px;
+  width: 160px;
+}
+
+#drag-target div {
+  background-color: gray;
+  border: 3px lightgray solid;
+}
+
+.placeholder {
+  background-color: rgb(117, 117, 117);
+  width: 30px;
+  height: 30px;
+  margin: 5px;
 }

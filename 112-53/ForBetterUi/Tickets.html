@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -21,12 +23,20 @@
         <img src="assets\logo.png" alt="LOGO">
     </header>
     <form id="list">
-        <span>First name:</span><input name="first_name"> <br>
-        <span>Last name:</span><input name="last_name"> <br>
-        <span>Phone:</span><input name="phone"> <br>
-        <span>Password:</span><input name="password"> <br>
-        <input type="submit"> <br>
-        <input type="reset">
+        <p><span>名子(First name)</span><input name="first_name"></p>
+        <p><span>姓氏(Last name)</span><input name="last_name"></p>
+        <p><span>手機號碼(Phone)</span><input name="phone"></p>
+        <p><span>數字認證(Password)</span><input name="password"></p>
+        <div><span onclick="regen()">驗證碼(點我重生)</span></div>
+        <div><span>小到大(less to more)</span></div>
+        <div id=drag>
+            <div><span>1</span><span>2</span><span>3</span><span>4</span></div>
+        </div>
+        <div id="drag-target">
+            <div></div>
+        </div>
+        <div><input type="button" id="sub" value="送出按鈕(Submit)"><input type="reset" value="重設按鈕(reset)"></div>
+
     </form>
     <footer>
         <div id="socialINFO">
@@ -42,6 +52,7 @@
 
         <p>Copyright &copy; 2022 Floriade All Right Reserved</p>
     </footer>
+    <script src="tickets.js"></script>
 </body>
 
 </html>

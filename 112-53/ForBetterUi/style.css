@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-color: grey;
+  width: 1920px;
+  height: 1080px;
 }
 
 header {
@@ -234,7 +236,7 @@ footer p {
 }
 
 #list div {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -251,13 +253,21 @@ footer p {
   border-bottom: 1px solid white;
 }
 
+#drag_area {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
 #drag,
 #drag-target {
   margin: 3px;
 }
 
-#drag div span,
-#drag-target div span {
+#drag span,
+#drag-target span {
   background-color: darkgrey;
   width: 30px;
   height: 30px;
@@ -267,14 +277,14 @@ footer p {
   justify-content: center;
 }
 
-#drag div,
-#drag-target div {
+#drag,
+#drag-target {
   background-color: lightgrey;
   height: 30px;
   width: 160px;
 }
 
-#drag-target div {
+#drag-target {
   background-color: gray;
   border: 3px lightgray solid;
 }

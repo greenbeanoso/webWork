@@ -23,19 +23,23 @@
         <img src="assets\logo.png" alt="LOGO">
     </header>
     <form id="list">
-        <p><span>名子(First name)</span><input name="first_name"></p>
-        <p><span>姓氏(Last name)</span><input name="last_name"></p>
-        <p><span>手機號碼(Phone)</span><input name="phone"></p>
-        <p><span>數字認證(Password)</span><input name="password"></p>
+        <p><span>名子(First name)</span><input name="first_name" required></p>
+        <p><span>姓氏(Last name)</span><input name="last_name" required></p>
+        <p><span>手機號碼(Phone)</span><input name="phone" required></p>
+        <p><span>數字認證(Password)</span><input name="password" required></p>
         <div><span onclick="regen()">驗證碼(點我重生)</span></div>
         <div><span>小到大(less to more)</span></div>
-        <div id=drag>
-            <div><span>1</span><span>2</span><span>3</span><span>4</span></div>
+      <div id="drag_area">
+        <div id="drag" class="connectedSortable">
+            <span class="ui-state-default">1</span>
+            <span class="ui-state-default">2</span>
+            <span class="ui-state-default">3</span>
+            <span class="ui-state-default">4</span>
         </div>
-        <div id="drag-target">
-            <div></div>
+        <div id="drag-target" class="connectedSortable">
+      </div>
         </div>
-        <div><input type="button" id="sub" value="送出按鈕(Submit)"><input type="reset" value="重設按鈕(reset)"></div>
+        <div><input type="submit" id="sub" value="送出按鈕(Submit)"><input type="reset" value="重設按鈕(reset)"></div>
 
     </form>
     <footer>
